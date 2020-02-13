@@ -4,6 +4,11 @@
 using namespace std;
 using namespace noble;
 
+/**
+ * Create a new Image
+ * 
+ * Note: Images can only be created by a camera.
+ */ 
 Image::Image(Camera camera, int size = 0) {
   // If there is no size then use native resolution
   if (size ==  0)
@@ -26,3 +31,10 @@ Image::Image(Camera camera, int size = 0) {
   this->name.back() = (int)this->name.back() + 1;
 }
 
+int Image::pixelCount() {
+  return this->pixels;
+}
+
+string Image::getName() {
+  return this->name;
+}
