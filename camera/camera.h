@@ -16,6 +16,10 @@ namespace noble {
     public:
       Camera(CameraBrand, CameraType, int);
       void displaySpecs() const;
+      int picturesTaken();
+      int pictureCapacity();
+      int storageUsed();
+      int storageCapacity();
   };
 }
 
