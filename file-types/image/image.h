@@ -11,10 +11,14 @@
 using namespace std;
 namespace noble {
   class Image {
+    char* buffer[];
+    string name;
+
     public:
       Image(Camera, int);
       int pixelCount();
-      int name();
+      string getName();
+      int getBuffer();
       time_t createdAt();
   };
 }
