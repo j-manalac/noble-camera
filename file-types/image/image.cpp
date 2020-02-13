@@ -11,6 +11,9 @@ Image::Image(Camera camera, int size = 0) {
     size = camera.resolution();
   }
 
+  // Set number of pixels to size
+  this->pixels = size;
+
   // Create Image Buffer 
   this->buffer[size];
   for (size_t i = 0; i < size; i++)
@@ -18,8 +21,8 @@ Image::Image(Camera camera, int size = 0) {
     this->buffer[i] = generateHex();
   }
 
+  // Create new file using the last avaliable file name from the camera
   this->name = camera.getLatestImageName();
-  this->name.back() = stoi( this->name.back() ) + 1;
-
+  this->name.back() = (int)this->name.back() + 1;
 }
 
