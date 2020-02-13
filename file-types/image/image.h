@@ -12,6 +12,7 @@ using namespace std;
 namespace noble {
   class Image {
     char* buffer[];
+    int pixels;
     string name;
 
     public:
