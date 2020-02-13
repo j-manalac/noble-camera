@@ -19,7 +19,7 @@ namespace noble {
       Image(Camera, int);
       int pixelCount();
       string getName();
-      int getBuffer();
+      char* getBuffer();
       time_t createdAt();
   };
 }
