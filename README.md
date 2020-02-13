@@ -1,2 +1,3 @@
-# noble-camera
-the noblest of cameras
+# Noble Camera
+
+A camera implementation in our soon to be beloved C++
